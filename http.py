@@ -18,10 +18,10 @@ else:
 
 site.addsitedir(APPDIR)
 
-import act_config as gameconf
+import config as gameconf
 
 LOGGERS = {}
-LOGDIR = getattr(gameconf, "act_logdir", os.path.join(APPDIR, "log"))
+LOGDIR = getattr(gameconf, "logdir", os.path.join(APPDIR, "log"))
 if not os.path.isdir(LOGDIR):
     os.makedirs(LOGDIR)
 
